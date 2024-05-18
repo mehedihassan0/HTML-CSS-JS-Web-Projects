@@ -39,11 +39,11 @@
 </div>
 
 <script>
-    const api_key = "7c97619fe4e782ba2f0e264b70ba9258";
+    const api_key = "";
     const api_url = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
     const searchBox = document.querySelector(".search input");
     const searchBtn = document.querySelector(".search button");
-    const wIcon= document.querySelector(".weather-icon")
+    const wIcon= document.querySelector(".weather-icon");
     async function checkWeather(city){
         const responce = await fetch(api_url +city +  `&appid=${api_key}`);
         if(responce.status == 404){
@@ -58,22 +58,22 @@
         document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
         document.querySelector(".wind").innerHTML = data.wind.speed + " km/h";
         if(data.weather[0].main=="Clouds"){
-            wIcon.src = "images/clouds.png"
+            wIcon.src = "images/clouds.png";
         }
         else if (data.weather[0].main=="Clouds"){
-            wIcon.src = "images/clouds.png"
+            wIcon.src = "images/clouds.png";
         }
         else if (data.weather[0].main=="Clear"){
-            wIcon.src = "images/clear.png"
+            wIcon.src = "images/clear.png";
         }
         else if (data.weather[0].main=="Rain"){
-            wIcon.src = "images/rain.png"
+            wIcon.src = "images/rain.png";
         }
         else if (data.weather[0].main=="Mist"){
-            wIcon.src = "images/mist.png"
+            wIcon.src = "images/mist.png";
         }
         else if (data.weather[0].main=="Drizzle"){
-            wIcon.src = "images/drizzle.png"
+            wIcon.src = "images/drizzle.png";
         }
         document.querySelector(".weather").style.display = "block";
         document.querySelector(".error").style.display= "none";
