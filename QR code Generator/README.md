@@ -1,7 +1,7 @@
 
 A simple QR code generator using html , css and js . 
 screenshots
-![Screenshot from 2023-12-05 16-45-52](https://github.com/mehedihassan0/HTML-CSS-JS-Web-Projects/assets/106251826/6b2dc48e-e2f1-4ff4-a790-858ab1987ba1)
+![Screenshot from 2024-05-22 23-09-40](https://github.com/mehedihassan0/HTML-CSS-JS-Web-Projects/assets/106251826/6d3f4f3c-30e2-4c4c-b4aa-205e71701c53)
 
 
 
